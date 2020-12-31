@@ -1,13 +1,12 @@
-var events=[];
+var lists=[];
 function Add(){
-    var event=document.getElementById("event");
-
-    var s= events.includes(event);
-
+    var list=document.getElementById("event").value
+    var s= lists.includes(list);
     if (s==true){
         alert("Activity already added")
     }else{
-        events.push(event)
+        lists.push(list)
+        console.log(lists) 
     }
-    console.log(events);
+    document.getElementById("sec").innerHTML=lists
 }
