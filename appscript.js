@@ -8,5 +8,8 @@ function Add(){
         lists.push(list)
         console.log(lists) 
     }
-    document.getElementById("sec").innerHTML=lists
+    var output=lists.join('<br/>');
+    document.getElementById("sec").innerHTML=output;
 }
+
+
